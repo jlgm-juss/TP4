@@ -7,10 +7,10 @@ class Rectangulo {
         this.ancho = ancho;
     }
     perimetro (){
- return 2* (this.alto + this.ancho)
+ rectangulo = 2* (this.alto + this.ancho)
     }
     area (){
-return this.alto * this.ancho
+rectangulo1 = this.alto * this.ancho
     }
 }
 
@@ -18,4 +18,7 @@ return this.alto * this.ancho
 
 let rectangulo = new Rectangulo (4, 5);
 rectangulo.perimetro();
-rectangulo.area();
+document.write(`El perimetro es: ${rectangulo}<br>`)
+let rectangulo1 = new Rectangulo (3,8);
+rectangulo1.area();
+document.write(`El area es: ${rectangulo1}`)
