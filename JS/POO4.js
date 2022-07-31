@@ -9,15 +9,19 @@ this.nombre = nombre;
 this.precio = precio;
     }
     imprimeDatos(){
-propiedades = document.write(`<h4>Propiedades</h4><ul><li>Codigo: ${this.codigo}</li><li>Nombre: ${this.nombre}</li><li>Precio: ${this.precio}</li></ul>`);
-propiedades1 = document.write(`<h4>Propiedades</h4><ul><li>Codigo: ${this.codigo}</li><li>Nombre: ${this.nombre}</li><li>Precio: ${this.precio}</li></ul>`);
+        propiedades = document.write(`<h4>Propiedades</h4><ul><li>Codigo: ${this.codigo}</li><li>Nombre: ${this.nombre}</li><li>Precio: ${this.precio}</li></ul>`);
+        
+    }
+    imprimeDatos1(){
+        propiedades1 = document.write(`<h4>Propiedades</h4><ul><li>Codigo: ${this.codigo}</li><li>Nombre: ${this.nombre}</li><li>Precio: ${this.precio}</li></ul>`);
     }
 }
 let propiedades = new Producto ('Fa387Z', 'Shampoo', '350$');
-propiedades1 = new Producto ('Zf487', 'Cafe', '400$');
+let propiedades1 = new Producto ('Zf487', 'Cafe', '400$');
 let almacenar = [];
 almacenar.push(propiedades1, propiedades);
 propiedades.imprimeDatos();
+propiedades1.imprimeDatos1();
 console.log(almacenar);
 
 
